@@ -1,0 +1,400 @@
+/* --- CSS Variables --- */
+:root {
+    --font-heading: 'Roboto Slab', serif;
+    --font-sans: 'Open Sans', sans-serif;
+
+    /* Light Theme Defaults (overridden by themeSettings.light in config/data.json) */
+    --primary-color: #2c5282;
+    --page-background-color: #f7fafc;
+    --sidebar-background-color: #ffffff;
+    --main-content-background-color: #ffffff;
+    --text-color: #2d3748;
+    --subtext-color: #4a5568;
+    --border-color: #e2e8f0;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode {
+    /* Dark Theme Defaults (overridden by themeSettings.dark in config/data.json) */
+    --primary-color: #63b3ed;
+    --page-background-color: #1a202c;
+    --sidebar-background-color: #2d3748;
+    --main-content-background-color: #2d3748;
+    --text-color: #e2e8f0;
+    --subtext-color: #a0aec0;
+    --border-color: #4a5568;
+    --card-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* --- Base Styles --- */
+body {
+    font-family: var(--font-sans);
+    background-color: var(--page-background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.resume-container {
+    background-color: var(--main-content-background-color); /* Fallback for overall container */
+}
+
+/* --- Sidebar Styles --- */
+#sidebar {
+    background-color: var(--sidebar-background-color);
+    color: var(--text-color); /* Sidebar text color can be same as main or different */
+}
+#profileImage {
+    border-color: var(--primary-color);
+}
+.sidebar-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem; /* text-lg */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem; /* mb-3 */
+    padding-bottom: 0.25rem; /* pb-1 */
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+#contactList li, #contactList li a {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    font-size: 0.875rem; /* text-sm */
+}
+#contactList li span {
+    min-width: 0;
+    overflow-wrap: anywhere; /* Long emails and URLs wrap instead of overflowing */
+}
+#contactList li i {
+    color: var(--primary-color);
+    width: 1.5em;
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+#languagesListSidebar li {
+    font-size: 0.875rem; /* text-sm */
+}
+#skillsListContainer .skill-category-title {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+#skillsListContainer .skill-items {
+    font-size: 0.875rem;
+    color: var(--subtext-color);
+}
+#interestsText {
+    color: var(--subtext-color);
+}
+
+/* --- Main Content Styles --- */
+#main-content {
+    background-color: var(--main-content-background-color);
+    color: var(--text-color);
+}
+.main-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem; /* text-2xl */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem; /* mb-6 */
+    padding-bottom: 0.5rem; /* pb-2 */
+    border-bottom: 3px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+.main-section-title i {
+    margin-right: 0.75rem; /* Space between icon and title text */
+}
+
+/* Experience Item Styling */
+.experience-item {
+    margin-bottom: 1.5rem; /* mb-6, space between items */
+    padding-left: 1.5rem; /* pl-6, for the timeline effect */
+    position: relative;
+    border-left: 2px solid var(--border-color);
+}
+.experience-item::before { /* Timeline dot */
+    content: '';
+    position: absolute;
+    left: -0.45rem; /* Adjust to center on the border */
+    top: 0.25rem; /* Align with first line of text */
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 2px solid var(--main-content-background-color); /* Creates a "hole punch" effect */
+}
+.experience-item-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600;
+    color: var(--text-color);
+}
+.experience-item-company {
+    font-size: 1rem; /* text-base */
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.experience-item-meta {
+    font-size: 0.875rem; /* text-sm */
+    color: var(--subtext-color);
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+.experience-item-summary {
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+    margin-bottom: 0.5rem;
+}
+.experience-item-responsibilities {
+    list-style: disc;
+    padding-left: 1.25rem; /* pl-5 */
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: var(--sidebar-background-color); /* Use sidebar bg for contrast or card-specific bg */
+    border: 1px solid var(--border-color);
+    padding: 1rem; /* p-4 */
+    border-radius: 0.375rem; /* rounded-md */
+    box-shadow: 0 2px 4px 0 var(--card-shadow);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px 0 var(--card-shadow);
+}
+.project-name {
+    font-family: var(--font-heading);
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.project-tech {
+    font-size: 0.8rem; /* text-xs */
+    color: var(--subtext-color);
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+.project-description {
+    font-size: 0.875rem; /* text-sm */
+    margin-bottom: 0.75rem;
+}
+.project-links a {
+    font-size: 0.875rem;
+    margin-right: 0.75rem;
+    color: var(--primary-color);
+}
+.project-links a i {
+    margin-right: 0.25rem;
+}
+
+/* Publication Item Styling */
+.publication-item {
+    margin-bottom: 1rem;
+}
+.publication-title {
+    font-family: var(--font-heading);
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600;
+    color: var(--text-color);
+}
+.publication-authors, .publication-venue, .publication-year {
+    font-size: 0.875rem; /* text-sm */
+    color: var(--subtext-color);
+}
+.publication-link {
+    font-size: 0.875rem;
+    color: var(--primary-color);
+}
+
+/* --- Links & Theme Toggle --- */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+a:hover {
+    text-decoration: underline;
+}
+#theme-toggle:hover {
+    opacity: 0.8;
+}
+
+/* --- Print Styles --- */
+@media print {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 9pt; /* Smaller font for print */
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    .resume-container {
+        /* Paper is narrower than the lg breakpoint, so force the two columns */
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start;
+        overflow: visible !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+    .sidebar-sticky-content {
+        position: static !important;
+    }
+    #profileImage {
+        width: 6rem !important;
+        height: 6rem !important;
+    }
+    .print\:w-1\/3 { width: 33.333333% !important; }
+    .print\:w-2\/3 { width: 66.666667% !important; }
+    #sidebar, #main-content {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        padding: 0.5cm !important; /* Reduced padding for print */
+    }
+    #sidebar {
+        border-right: 1px solid #dddddd;
+    }
+    .no-print, #theme-toggle {
+        display: none !important;
+    }
+    h1, h2, h3, h4, p, li, a, span, i {
+        color: #000000 !important;
+    }
+    .sidebar-section-title, .main-section-title, #profileImage {
+        border-color: #666666 !important;
+    }
+    .main-section-title i { display: none; } /* Hide icons in main titles for print */
+    .experience-item {
+        border-left-color: #cccccc !important;
+        page-break-inside: avoid;
+    }
+    .experience-item::before {
+        background-color: #000000 !important;
+        border-color: #ffffff !important;
+    }
+    .project-card {
+        border-color: #cccccc !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+        background-color: #f9f9f9 !important; /* Light bg for cards in print */
+    }
+    a {
+        text-decoration: underline !important;
+        color: #000000 !important;
+    }
+    .project-links a::after { /* Show full link for print */
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #333333 !important;
+    }
+    #page-footer { display: block; } /* Ensure footer is visible for print if desired */
+}
+
+/* Education Item Styling in Main Content */
+.education-item {
+    background-color: var(--sidebar-background-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px var(--card-shadow);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.education-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--card-shadow);
+}
+
+.education-header {
+    margin-bottom: 1rem;
+}
+
+.education-degree {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.education-institution {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.education-period {
+    font-size: 0.875rem;
+    color: var(--subtext-color);
+    padding: 0.25rem 0.75rem;
+    background-color: var(--page-background-color);
+    border-radius: 1rem;
+}
+
+.education-gpa {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: color-mix(in srgb, var(--primary-color) 10%, transparent);
+    border-radius: 0.25rem;
+}
+
+.education-details {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 0.9375rem;
+}
+
+.education-achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-achievements li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+    color: var(--text-color);
+}
+
+.education-achievements li i {
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+@media print {
+    .education-item {
+        break-inside: avoid;
+        border-left-color: #666666 !important;
+        background-color: #ffffff !important;
+        box-shadow: none !important;
+    }
+    .education-period {
+        background-color: #f5f5f5 !important;
+    }
+    .education-gpa {
+        background-color: #f5f5f5 !important;
+    }
+}
