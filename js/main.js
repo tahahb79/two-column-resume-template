@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Theme Management ---
     function applyThemeColors(themeConfig) {
         if (!themeConfig) return;
-        const root = document.documentElement.style;
+        // Set on <body> so the values win over the defaults in style.css for both themes
+        const root = document.body.style;
         const variables = {
             '--primary-color': themeConfig.primaryColor,
             '--page-background-color': themeConfig.backgroundColor,

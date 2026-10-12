@@ -227,6 +227,17 @@ a:hover {
 
 /* --- Print Styles --- */
 @media print {
+    /* Print in dark-on-white whichever theme is active on screen */
+    body, body.dark-mode {
+        --primary-color: #000000 !important;
+        --page-background-color: #ffffff !important;
+        --sidebar-background-color: #ffffff !important;
+        --main-content-background-color: #ffffff !important;
+        --text-color: #000000 !important;
+        --subtext-color: #333333 !important;
+        --border-color: #cccccc !important;
+        --card-shadow: transparent !important;
+    }
     body {
         background-color: #ffffff !important;
         color: #000000 !important;
