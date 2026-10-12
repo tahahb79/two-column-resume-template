@@ -2,6 +2,8 @@
 
 A single-page resume site with a sidebar and a main column. All content and colours come from one file, `config/data.json`, so you can publish your own resume on GitHub Pages without touching the HTML, CSS or JavaScript.
 
+**[Live demo](https://tahahb79.github.io/two-column-resume-template/)**
+
 - Light and dark mode, following the visitor's system setting, with a toggle
 - Responsive: two columns on desktop, one on mobile
 - Prints to a clean two-column PDF
