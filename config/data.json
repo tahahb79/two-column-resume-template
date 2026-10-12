@@ -1,18 +1,18 @@
 {
   "personalInfo": {
-    "name": "Aragorn II Elessar Telcontar",
-    "title": "King of the Reunited Kingdom of Arnor and Gondor, Chieftain of the Dúnedain",
+    "name": "Your Name",
+    "title": "Your Job Title",
     "profileImage": "images/profile.svg",
     "faviconPath": "images/favicon.svg",
-    "email": "elessar.king@reunitedkingdom.gov.me",
-    "phone": "By Royal Messenger or Raven Post",
-    "websiteLabel": "TheChroniclesOfElessar.me",
-    "websiteURL": "https://thechroniclesofelessar.me",
-    "linkedinUser": "AragornElessarTelcontar",
-    "linkedinURL": "https://middle-earth.linkedin.com/in/AragornElessarTelcontar",
-    "githubUser": "ElessarStonehand",
-    "githubURL": "https://github.com/ElessarStonehand/KingdomRestoration",
-    "location": "Minas Tirith, Gondor (Formerly of Arnor, Rivendell, and the Wilds)"
+    "email": "your.email@example.com",
+    "phone": "+1 234 567 8900",
+    "websiteLabel": "yourwebsite.com",
+    "websiteURL": "https://yourwebsite.com",
+    "linkedinUser": "your-linkedin-username",
+    "linkedinURL": "https://www.linkedin.com/in/your-linkedin-username",
+    "githubUser": "your-github-username",
+    "githubURL": "https://github.com/your-github-username",
+    "location": "Your City, Your Country"
   },
   "themeSettings": {
     "light": {
@@ -38,168 +38,105 @@
   },
   "sections": {
     "sidebar": {
-      "aboutMe": "Heir of Isildur and rightful King of Arnor and Gondor. Known also as Strider, Thorongil, and Elessar. Proven leader in the War of the Ring, dedicated to the restoration of peace, justice, and the lineage of Kings in Middle-earth. Now focused on the prosperity and unity of the Reunited Kingdom.",
+      "aboutMe": "Write two or three sentences about yourself here: who you are, what you do, and what kind of work you are looking for.",
       "skills": [
         {
-          "category": "Combat & Ranger Proficiencies",
-          "items": [
-            "Master Swordsmanship (Andúril, Flame of the West)",
-            "Expert Tracking & Wilderness Survival",
-            "Stealth & Reconnaissance",
-            "Bowmanship (Advanced)",
-            "Herbalism & Field Medicine (Athelas Lore)",
-            "Leadership in Battle"
-          ]
+          "category": "Skill Category 1",
+          "items": ["Skill 1", "Skill 2", "Skill 3", "Skill 4"]
         },
         {
-          "category": "Royal & Governance Skills",
-          "items": [
-            "Strategic Command & Grand Strategy",
-            "Diplomacy & Alliance Management",
-            "Royal Decree & Lawmaking",
-            "Ancient Lore & Prophetic Interpretation",
-            "Public Oration & Inspiration",
-            "Kingdom Administration"
-          ]
+          "category": "Skill Category 2",
+          "items": ["Skill 1", "Skill 2", "Skill 3", "Skill 4"]
         }
       ],
       "languages": [
-        {
-          "name": "Westron (Common Speech)",
-          "level": "Native Fluency"
-        },
-        {
-          "name": "Sindarin (Elvish)",
-          "level": "Fluent (Spoken & Written)"
-        },
-        {
-          "name": "Quenya (High-Elven)",
-          "level": "Proficient (Lore & Ceremony)"
-        },
-        {
-          "name": "Rohirric",
-          "level": "Conversational Understanding"
-        },
-        {
-          "name": "Various Mannish Dialects",
-          "level": "Working Knowledge"
-        }
+        { "name": "Language 1", "level": "Native" },
+        { "name": "Language 2", "level": "Fluent" },
+        { "name": "Language 3", "level": "Intermediate" }
       ],
-      "interests": [
-        "The Lay of Lúthien & Beren",
-        "Pipe-weed (Longbottom Leaf preferred)",
-        "Stargazing & Astronomy",
-        "Ancient Noldorin Lore",
-        "Rebuilding the Great Libraries of Gondor",
-        "Maintaining Peace with Harad and Rhûn"
-      ]
+      "interests": ["Interest 1", "Interest 2", "Interest 3", "Interest 4"]
     },
     "main": {
       "education": [
         {
-          "degree": "Stewardship in Lore, Wisdom, and Martial Prowess",
-          "institution": "Household of Elrond Peredhil, Rivendell (Imladris)",
-          "period": "T.A. 2933 - T.A. 2951 (Upbringing & Early Training)",
-          "gpa": "Exemplary in Lineage and Tutelage",
-          "details": "Intensive instruction in Elven history, languages (Sindarin, Quenya), healing arts, and the traditions of the Dúnedain. Mentored by Elrond and fostered alongside Elladan and Elrohir.",
+          "degree": "Your Degree, Field of Study",
+          "institution": "University Name",
+          "period": "Start Year - End Year",
+          "gpa": "Your GPA",
+          "details": "A short description of your studies: your focus area, thesis topic, or relevant coursework.",
           "achievements": [
-            "Revealed true lineage as Isildur's Heir.",
-            "Mastered the histories and prophecies concerning the Dúnedain.",
-            "Received the Ring of Barahir and shards of Narsil."
+            "An award, honour, or scholarship you received.",
+            "A notable project, thesis, or activity.",
+            "Another achievement worth mentioning."
           ]
         },
         {
-          "degree": "Chieftain of the Dúnedain of the North",
-          "institution": "The Rangers of the North, Eriador",
-          "period": "T.A. 2953 - T.A. 3019",
-          "gpa": "Unmatched Leadership in the Wild",
-          "details": "Commanded the remaining Dúnedain of Arnor, protecting the northern lands from servants of the Enemy. Undertook numerous perilous journeys and missions.",
-          "achievements": [
-            "Successfully defended the borders of the Shire and Bree-land for decades.",
-            "Hunted Gollum across Middle-earth at the behest of Gandalf.",
-            "Gained extensive knowledge of the enemy's movements and the geography of Middle-earth."
-          ]
+          "degree": "Your Previous Degree, Field of Study",
+          "institution": "University Name",
+          "period": "Start Year - End Year",
+          "details": "A short description of your studies. Fields you do not need, such as the GPA here, can simply be left out."
         }
       ],
       "experience": [
         {
-          "title": "High King of the Reunited Kingdom of Arnor and Gondor",
-          "company": "The Reunited Kingdom",
-          "location": "Minas Tirith (Gondor) & Annúminas (Arnor)",
-          "period": "1 May T.A. 3019 (or F.A. 1) – F.A. 120",
-          "summary": "Ascended to the throne after the War of the Ring, uniting the ancient Númenórean realms. Ruled for 122 years, establishing an era of peace, justice, and renewal across Middle-earth.",
+          "title": "Your Job Title",
+          "company": "Company Name",
+          "location": "City, Country",
+          "period": "Month Year – Present",
+          "summary": "One or two sentences describing your role and the team or product you work on.",
           "responsibilities": [
-            "Re-established and administered laws, ensuring justice and order throughout the vast kingdom.",
-            "Commanded the Royal Armies, securing borders and undertaking campaigns to quell remaining evils.",
-            "Forged and maintained strong alliances with Rohan, the Dwarves of the Lonely Mountain, and the Elves.",
-            "Oversaw the rebuilding of Minas Tirith, Osgiliath, and Annúminas; replanted the White Tree of Gondor.",
-            "Married Arwen Undómiel, daughter of Elrond, uniting the lines of Men and Elves."
+            "Describe a responsibility or accomplishment, ideally with a measurable result.",
+            "Describe another responsibility or accomplishment.",
+            "Describe another responsibility or accomplishment."
           ]
         },
         {
-          "title": "Leader in the Fellowship of the Ring & Captain of the Host of the West",
-          "company": "The Council of Elrond / Allied Forces of the Free Peoples",
-          "location": "Across Eriador, Rhovanion, Rohan, Gondor, and Mordor",
-          "period": "T.A. 3018 – T.A. 3019",
-          "summary": "A pivotal figure in the quest to destroy the One Ring and in the subsequent military campaigns against Sauron.",
+          "title": "Your Previous Job Title",
+          "company": "Company Name",
+          "location": "City, Country",
+          "period": "Month Year – Month Year",
+          "summary": "One or two sentences describing your role and the team or product you worked on.",
           "responsibilities": [
-            "Guided the Fellowship from Rivendell, assuming leadership after Gandalf's fall in Moria.",
-            "Led the Rohirrim and the Dúnedain at the Battle of the Hornburg (Helm's Deep).",
-            "Commanded the Army of the Dead, liberating Pelargir and reinforcing Minas Tirith.",
-            "Wielded Andúril, reforged from Narsil, as a symbol of hope and rightful authority.",
-            "Strategically led the significantly outnumbered Host of the West to the Black Gate to divert Sauron's attention, enabling the Ring-bearer's success."
-          ]
-        },
-        {
-          "title": "Ranger of the North (as 'Strider') & Captain 'Thorongil'",
-          "company": "Dúnedain of the North / Armies of Rohan & Gondor (incognito)",
-          "location": "Eriador, Rohan, Gondor, and the wider Middle-earth",
-          "period": "c. T.A. 2953 – T.A. 3018 (as Strider); c. T.A. 2957 – T.A. 2980 (as Thorongil)",
-          "summary": "Lived a hard life in the wild, protecting the innocent and fighting the servants of Sauron. Served in disguise in the south, gaining renown as a great captain.",
-          "responsibilities": [
-            "Patrolled the borders of Eriador, safeguarding regions like the Shire and Bree.",
-            "As Thorongil, served Steward Ecthelion II of Gondor and King Thengel of Rohan, advising them and leading forces in battle, including a major raid on Umbar.",
-            "Tracked and captured Gollum in the Dead Marshes.",
-            "Kept his lineage and destiny hidden until the time was right."
+            "Describe a responsibility or accomplishment, ideally with a measurable result.",
+            "Describe another responsibility or accomplishment."
           ]
         }
       ],
       "projects": [
         {
-          "name": "The Restoration of the United Kingdom & its Capitals",
-          "technologies": "Royal Charters, Strategic Urban Planning, Masonry & Engineering, Diplomacy, Kingsfoil (Athelas)",
-          "githubLink": "https://github.com/ElessarStonehand/KingdomRestoration/tree/main/MinasTirithProject",
-          "description": "The comprehensive rebuilding and repopulation of major cities including Minas Tirith and Annúminas, the restoration of the White Tree, and the re-establishment of ancient borders and traditions."
+          "name": "Project Name 1",
+          "technologies": "Technology 1, Technology 2, Technology 3",
+          "link": "https://example.com",
+          "githubLink": "https://github.com/your-github-username/project-name",
+          "description": "A short description of the project: what it does, why you built it, and your part in it."
         },
         {
-          "name": "The Forging of Andúril, Flame of the West",
-          "technologies": "Elven Smithing (Rivendell), Ancient Shards (Narsil), Prophecy Fulfillment",
-          "description": "The reforging of the Sword That Was Broken into Andúril, a symbol of kingship and a potent weapon against the Shadow, carried throughout the War of the Ring."
-        },
-        {
-          "name": "The Grey Company's Journey & The Paths of the Dead",
-          "technologies": "Ancient Oath-Breaking Lore, Dúnedain Kinship, Courage, Royal Authority",
-          "description": "Led a company of Dúnedain through the haunted Paths of the Dead to summon the Oathbreakers, who then fulfilled their pledge by routing the Corsairs of Umbar at Pelargir."
+          "name": "Project Name 2",
+          "technologies": "Technology 1, Technology 2",
+          "githubLink": "https://github.com/your-github-username/project-name",
+          "description": "A short description of the project. Leave out \"link\" or \"githubLink\" to hide that button."
         }
       ],
       "publications": [
         {
-          "title": "The Proclamations of Elessar: A Compendium of Laws and Judgements for the Fourth Age",
-          "authors": "By Order of His Majesty, King Elessar Telcontar. Scribed by the Royal Chancellery.",
-          "venue": "The Great Library of Minas Tirith & The Royal Archives of Annúminas",
-          "year": "F.A. 1 - F.A. 120"
+          "title": "Title of Your Publication",
+          "authors": "Your Name, Co-author Name, Co-author Name",
+          "venue": "Journal or Conference Name",
+          "year": "Year",
+          "link": "https://example.com",
+          "linkText": "Read the paper"
         },
         {
-          "title": "A Treatise on the Uses of Athelas (Kingsfoil)",
-          "authors": "King Elessar (based on ancient lore and personal experience)",
-          "venue": "Informal circulation among Healers of Gondor",
-          "year": "Early Fourth Age"
+          "title": "Title of Another Publication",
+          "authors": "Co-author Name, Your Name",
+          "venue": "Journal or Conference Name",
+          "year": "Year"
         }
       ]
     }
   },
   "footer": {
-    "text": "Reign Concluded: March 1st, Fourth Age 120. Last updated by the Royal Scribes.",
+    "text": "Last updated: Month Year.",
     "repoLink": "https://github.com/tahahb79/two-column-resume-template",
     "repoLinkText": "Built with two-column-resume-template"
   }

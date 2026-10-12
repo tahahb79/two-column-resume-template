@@ -86,4 +86,4 @@ Open the page, press <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>Cmd</kbd>+<kbd>P</kbd> o
 
 ## License
 
-[MIT](LICENSE). The sample content is a fictional resume used as placeholder text.
+[MIT](LICENSE)
